@@ -35,6 +35,7 @@ module.exports = {
         "no-console": "off",
         "func-style": "off",
         "max-lines": "off",
+        "no-mixed-operators": "off",
         "no-else-return": "off",
         "no-underscore-dangle": "off",
         "space-before-function-paren": ["warn", {
@@ -143,6 +144,9 @@ module.exports = {
             "@typescript-eslint/no-magic-numbers": "off",
             "@typescript-eslint/explicit-function-return-type": "off",
             "@typescript-eslint/promise-function-async": "off",
+            // These kind of errors are already caught by the type system and
+            // this lint generates false positives as it doesn't do CFG analysis.
+            "@typescript-eslint/init-declarations": "off",
             "implicit-arrow-linebreak": "off",
             "@typescript-eslint/sort-type-union-intersection-members": "off",
             "@typescript-eslint/comma-dangle": "off",
