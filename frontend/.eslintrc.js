@@ -78,7 +78,7 @@ module.exports = {
         "space-in-parens": "warn",
         "comma-spacing": "warn",
         "comma-style": "warn",
-        "operator-linebreak": "warn",
+        "operator-linebreak": ["warn", "before"],
         "space-infix-ops": "warn",
         "keyword-spacing": "warn",
         "space-unary-ops": "warn",
